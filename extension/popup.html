@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>快捷笔记</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="top">
+    <h1>快捷笔记</h1>
+    <span id="count" class="count">0 条</span>
+  </header>
+
+  <!-- 输入区 -->
+  <section class="input-box">
+    <textarea id="noteInput" placeholder="写点什么...&#10;Ctrl+Enter 快速保存"></textarea>
+    <div class="input-meta" id="meta">加载当前页面信息...</div>
+    <div class="input-actions">
+      <button id="saveBtn" class="btn btn-save">保存</button>
+      <button id="clearInput" class="btn btn-ghost">清空</button>
+    </div>
+  </section>
+
+  <div class="divider">
+    <span>所有笔记</span>
+  </div>
+
+  <!-- 笔记列表 -->
+  <section id="list" class="list"></section>
+  <div id="empty" class="empty hidden">还没有笔记，先记一条吧～</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
