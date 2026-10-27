@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>快捷笔记 · 上网随手记的浏览器插件</title>
+  <meta name="description" content="免费 Chrome/Edge 扩展，上网浏览时随手记笔记，自动带当前网页标题和网址，本地存储不上传。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <div class="nav-logo">📝</div>
+        <span>快捷笔记</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">功能</a></li>
+        <li><a href="#install">安装</a></li>
+        <li><a href="#usage">使用</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+      <a href="#install" class="btn-primary">立即下载</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="badge">✨ Manifest V3 · 完全本地 · 零网络请求</span>
+        <h1>上网看到好内容？<br><span class="highlight">随手一写，永久留档</span></h1>
+        <p class="hero-desc">
+          装一个几十 KB 的小插件，浏览任何网页时点一下图标就能写笔记。
+          自动带上当前网页标题和网址，关掉浏览器还在。
+        </p>
+        <div class="hero-cta">
+          <a href="#install" class="btn-primary btn-lg">⬇️ 下载扩展</a>
+          <a href="#usage" class="btn-ghost btn-lg">看 30 秒教程</a>
+        </div>
+        <div class="hero-meta">
+          <span>📌 自动抓页面标题</span>
+          <span>💾 本地存储不上传</span>
+          <span>🔒 无账号无登录</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="mock-popup">
+          <div class="mock-popup-header">
+            <span class="mock-dot mock-dot-r"></span>
+            <span class="mock-dot mock-dot-y"></span>
+            <span class="mock-dot mock-dot-g"></span>
+            <span class="mock-title">快捷笔记</span>
+          </div>
+          <div class="mock-popup-body">
+            <textarea class="mock-textarea" disabled>论文里提到的 LALR 语法分析器实现思路，明天实验室要讨论...</textarea>
+            <div class="mock-meta">📌 LALR 语法分析器 · zh.wikipedia.org</div>
+            <div class="mock-actions">
+              <div class="mock-btn-save">保存</div>
+              <div class="mock-btn-clear">清空</div>
+            </div>
+            <div class="mock-divider"><span>所有笔记 · 2 条</span></div>
+            <div class="mock-note">
+              <div class="mock-note-text">这段代码要改成非递归版本...</div>
+              <div class="mock-note-foot">
+                <a class="mock-link" href="#">Python 协程 · segmentfault.com</a>
+                <span class="mock-time">10/26 22:10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>核心功能</h2>
+        <p>简单到没什么好介绍的</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">📝</div>
+          <h3>点图标直接写</h3>
+          <p>工具栏图标一点就开，弹窗里直接打字，没有中间步骤。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>自动带网页信息</h3>
+          <p>保存时自动记录当前页面标题和完整网址，回头点链接直接跳回去。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💾</div>
+          <h3>本地持久化</h3>
+          <p>用浏览器内置存储，关掉浏览器还在，重启电脑还在。没有后端不上传。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🗑️</div>
+          <h3>随手删</h3>
+          <p>每条笔记一个删除按钮，点确认就删干净，没有回收站。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⌨️</div>
+          <h3>快捷键保存</h3>
+          <p>Ctrl + Enter / ⌘ + Enter 快速存，不用伸手去点鼠标。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>零网络请求</h3>
+          <p>没有 API Key、没有服务器、没有登录，插件本身不会访问任何网址。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Install -->
+  <section class="section section-alt" id="install">
+    <div class="container">
+      <div class="section-header">
+        <h2>安装步骤</h2>
+        <p>3 分钟搞定</p>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>下载并解压</h3>
+            <p>下载 ZIP → 解压到固定位置（比如 D:\extensions\quick-note\），不要放临时文件夹。</p>
+            <a class="btn-ghost" href="quick-note.zip" download>⬇️ 下载 quick-note.zip</a>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>打开扩展管理</h3>
+            <p>Chrome 地址栏输入 <code>chrome://extensions</code>；Edge 输入 <code>edge://extensions</code>。右上角打开「开发者模式」。</p>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>加载扩展</h3>
+            <p>点「加载已解压的扩展程序」，选择 ZIP 里的 <code>extension/</code> 子文件夹（里面有 manifest.json）。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Usage -->
+  <section class="section" id="usage">
+    <div class="container">
+      <div class="section-header">
+        <h2>使用方法</h2>
+        <p>四个动作，记一条笔记</p>
+      </div>
+      <div class="usage-grid">
+        <div class="usage-step">
+          <div class="u-num">①</div>
+          <p>打开任何网页——新闻、论文、知乎、B站视频都行。</p>
+        </div>
+        <div class="usage-step">
+          <div class="u-num">②</div>
+          <p>点浏览器工具栏上的「快捷笔记」图标。</p>
+        </div>
+        <div class="usage-step">
+          <div class="u-num">③</div>
+          <p>弹窗里打字，Ctrl+Enter 或点「保存」。</p>
+        </div>
+        <div class="usage-step">
+          <div class="u-num">④</div>
+          <p>完事。关掉浏览器再打开，笔记还在。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>常见问题</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>笔记存在哪了？会不会丢？</summary>
+          <p>存在浏览器本地存储（chrome.storage.local），关掉浏览器、重启电脑都不会丢。但卸载扩展时会一起清掉，也不会跨浏览器同步（Chrome 和 Edge 存储是独立的）。</p>
+        </details>
+        <details class="faq-item">
+          <summary>为什么点图标没反应？</summary>
+          <p>大概率是加载时选了错的文件夹——必须选 <code>extension/</code> 子目录（里面有 manifest.json），不是整个项目根目录。重载后再试。</p>
+        </details>
+        <details class="faq-item">
+          <summary>笔记能导出吗？</summary>
+          <p>目前版本没做导出功能。要备份可以手动复制重要内容。后续版本会加导出 JSON/Markdown。</p>
+        </details>
+        <details class="faq-item">
+          <summary>支持哪些浏览器？</summary>
+          <p>任何 Chromium 内核的浏览器：Chrome、Edge、360、QQ 浏览器、Vivaldi 等。Firefox 不支持（用的是 WebExtensions 不同 API）。</p>
+        </details>
+        <details class="faq-item">
+          <summary>为什么 about:blank 页面显示「未检测到页面」？</summary>
+          <p>新标签页内部地址 chrome:// / edge:// / about:blank 这些页面 tab.query 拿不到 title 和 url，所以显示这个，属于正常现象。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>现在就装一个吧</h2>
+      <p>几 KB，零网络请求，想删就删</p>
+      <a href="#install" class="btn-primary btn-lg">安装 →</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>快捷笔记 · Chrome/Edge 扩展 · Manifest V3 · MIT License</p>
+      <p class="muted">仅供学习交流，不收集任何用户数据</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
